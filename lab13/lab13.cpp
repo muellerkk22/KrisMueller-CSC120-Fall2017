@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// This is a calculater that finds the US population years into the future
+// This is a calculater that finds the US population x years into the future
 
 int main () {
 
@@ -8,6 +8,8 @@ int main () {
 int years_from_now;
 
 int seconds_per_year = 60 * 60 * 24 * 365;
+
+int current_population = 325777900;
 
 // the variables will be initialized to seconds per incident
 
@@ -23,9 +25,7 @@ int migration_rate = 33;
 
 //current population relayed to user
 
-int current_population = 325777900;
-
-cout << "Right now, the current population of the US is about 325,777,900" << endl;
+cout << "Right now, the current population of the US is about " << current_population << endl;
 
 //ask user for population estimate
 
