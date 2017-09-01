@@ -41,18 +41,13 @@ int death_rate_per_year = seconds_per_year/death_rate;
 
 int migrants_per_year = seconds_per_year/migration_rate;
 
-cout << birthrate_per_year << endl;
-cout << death_rate_per_year <<endl;
-cout << migrants_per_year << endl;
-
 //calculate the future population
 
-int future_population = current_population + years_from_now * (birthrate_per_year + migrants_per_year - death_rate_per_year);
+int future_population = current_population + (years_from_now * (birthrate_per_year + migrants_per_year - death_rate_per_year));
 
 cout << "The estimated population of the US in " << 2017 + years_from_now << " is " << future_population << endl;
 
 // The output from the code is the estimnated population for the US in the future
 
-cout << (birthrate_per_year - (death_rate_per_year + migrants_per_year)) << endl;
 return 0;
 }
