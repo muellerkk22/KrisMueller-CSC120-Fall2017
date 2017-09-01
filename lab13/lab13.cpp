@@ -27,7 +27,7 @@ int migration_rate = 33;
 
 cout << "Right now, the current population of the US is about " << current_population << endl;
 
-//ask user for population estimate
+//ask user for for years into the future
 
 cout << "How far into the future (in years) would you like to see the population of the US? (Please type in an integer)" << endl;
 
