@@ -46,5 +46,6 @@ int future_population = current_population + years_from_now * (birthrate_per_yea
 
 cout << "The estimated population of the US in " << 2017 + years_from_now << " is " << future_population << endl;
 
+// The output from the code is the estimnated population for the US in the future
 return 0;
 }
