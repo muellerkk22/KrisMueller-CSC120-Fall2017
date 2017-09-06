@@ -36,13 +36,13 @@ cout << "The total counts are:\n" << total_25 << " quarters\n" << total_10 << " 
 
 float fee_percentage = .109;
 
-int fee = coins * fee_percentage;
+float fee = (coins * fee_percentage)/100;
 
-cout << "The fee for this transaction is 10.9% (" << fee << " cents)" << endl;
+cout << "The fee for this transaction is 10.9% ($" << fee << " dollars)" << endl;
 
-int user_total = coins - fee; 
+float user_total = (coins - fee) / 100; 
 
-cout << "After the fee your total is " << user_total << " cents" << endl;
+cout << "After the fee your total is $" << user_total << " dollars" << endl;
 
 
 //Print out voucher to be redeemed for cash
