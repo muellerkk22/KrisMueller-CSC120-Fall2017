@@ -1,3 +1,7 @@
+//Created ny Kris Mueller
+//Created on 9/7/17
+//Mad Lib paragraph
+
 #include <iostream>
 #include <string>
 using namespace std;
