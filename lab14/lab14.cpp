@@ -12,7 +12,7 @@ int coins = 0;
 
 cin >> coins;
 
-cout << "You have entered " << coins << " cents" << endl;
+cout << "You have entered $" << coins/100 << "." << coins % 100 << " dollars" << endl;
 
 //Determine how many of each denomination is present (most efficient amount of each) 
 
@@ -36,7 +36,7 @@ cout << "The total counts are:\n" << total_25 << " quarters\n" << total_10 << " 
 
 float fee_percentage = .109;
 
-float fee = (coins * fee_percentage)/100;
+float fee = (coins * fee_percentage) / 100;
 
 cout << "The fee for this transaction is 10.9% ($" << fee << " dollars)" << endl;
 
@@ -50,6 +50,5 @@ cout << "After the fee your total is $" << user_total << " dollars" << endl;
 cout << "Please take the printed voucher and redeem at the cashier's booth" << endl;
 
 return 0;
-
     
 }
