@@ -8,7 +8,8 @@ using namespace std;
 
 
 struct Health_Slip{
-    string user_name;
+    string first_name;
+    string last_name;
     double weight_in_pounds;
     double height_in_inches;
     double weight_in_kilograms;
@@ -25,8 +26,7 @@ int main ()
 {
 double weight_in_pounds;
 double height_in_inches;
-double weight_in_kilograms;135
-
+double weight_in_kilograms;
 double height_in_meters;
 char gender;
 int age;
@@ -35,7 +35,8 @@ double bmr_calories;
 double bmi;
 double num_burgers;
 double burger_calories = 600;
-string user_name;
+string first_name;
+string last_name;
 
 
 Health_Slip     health_slip_1;
@@ -45,8 +46,12 @@ Health_Slip     health_slip_1;
 //Ask user for weight, height, age and gender
 
 cout << "Please enter your first name: " << endl;
-cin >> user_name;
-health_slip_1.user_name = user_name;
+cin >> first_name;
+health_slip_1.first_name = first_name;
+
+cout <<"Please enter your last name: " <<endl;
+cin >> last_name;
+health_slip_1.last_name = last_name;
 
 
 cout << "Please enter your weight in pounds: " << endl;
@@ -98,7 +103,7 @@ health_slip_1.bmi = bmi;
 //Output a "health slip" with user name, age, height, BMI, Mifflin St. Jeor calories, Harris Benedict calories and number of food item to maintain weight
 
 cout << "Your Health Slip" << endl;
-cout << "User: " << health_slip_1.user_name << endl;
+cout << "User: " << health_slip_1.first_name << " " << health_slip_1.last_name << endl;
 cout <<  "Age: " <<  health_slip_1.age << endl;
 cout << "Height: " << health_slip_1.height_in_inches << endl;
 cout << "BMI: " << health_slip_1.bmi << endl;
