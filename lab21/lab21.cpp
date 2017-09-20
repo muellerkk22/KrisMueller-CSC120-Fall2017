@@ -37,6 +37,6 @@ new_wind_chill = 35.74 + .6215 * temperature - 35.75 * pow (wind_velocity, 0.16)
 //Print out results
 cout << "Wind Velocity\t" << "Old Style Wind Chill\t" << "New Style Wind Chill\t" << "Difference" << endl;
 cout << wind_velocity << "\t\t" << old_wind_chill << "\t\t\t" << new_wind_chill << "\t\t\t" << abs(old_wind_chill - new_wind_chill) << endl;
-    return 0;
     
+return 0;
 }
