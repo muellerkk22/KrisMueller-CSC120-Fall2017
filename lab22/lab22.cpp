@@ -7,17 +7,19 @@
 #include <cmath>
 
 using namespace std;
-
+//Determine the random number
 int random_num () 
 {
 int random_100 = 0;
 srand (time(0));
 random_100 = ((rand () % 100) + 1);
+cout << random_100 << endl;
 return random_100;
 }
 
+//Print random number
 int main () 
 {
-cout << random_num() << endl;
+random_num();
 return 0;
 }
