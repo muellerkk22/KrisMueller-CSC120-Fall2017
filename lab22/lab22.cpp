@@ -7,7 +7,8 @@
 #include <cmath>
 
 using namespace std;
-//Determine the random number
+
+//Determine the random number and print it
 int random_num () 
 {
 int random_100 = 0;
@@ -21,5 +22,6 @@ return random_100;
 int main () 
 {
 random_num();
+
 return 0;
 }
